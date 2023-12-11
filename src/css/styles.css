@@ -739,19 +739,19 @@ th {
 
 .ed__card--prep {
   padding-top: 100px;
-  background-image: url("/Images/prep.jpg");
+  background-image: url("../images/prep.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .ed__card--primary {
-  background-image: url("/Images/primary.jpg");
+  background-image: url("../images/primary.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .ed__card--secondary {
-  background-image: url("/Images/secondary.jpg");
+  background-image: url("../images/secondary.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -792,7 +792,7 @@ th {
 }
 
 .ed__card--uni {
-  background-image: url("/Images/uni.jpg");
+  background-image: url("../images/uni.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

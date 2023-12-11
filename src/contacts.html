@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,66 +19,136 @@
           <li><a href="home.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="photo-gallery.html">Photo Gallery</a></li>
+          <li><a href="photo-gallery.html">photo-gallery</a></li>
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="addies">
-        <div class="container5 c5">
-          <div class="row">
-            <div class="col-lg-4">
-              <h3 class="title">Contacts</h3>
-              <div class="phone">
-                <img src="Images/Icons/Phone.png" alt="phone" />
-                <p>+251 943 015 328</p>
-              </div>
-              <div class="email">
-                <img src="Images/Icons/email.png" alt="email" />
-                <a href="mailto:tayejoshua4@gmail.com" target="_blank"
-                  >tayejoshua4@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <h3 class="title">Address</h3>
-              <address>
-                <i
-                  >Subcity: Lemi Kura<br />Wereda: 08, <br />
-                  Kebele: 14/15,<br />
-                  Addis Ababa, Ethiopia<br />Postal Address: 30664</i
-                >
-              </address>
-            </div>
-            <div class="col-lg-4 chat">
-              <h3 class="title">Wanna Chat?</h3>
-              <div class="icons">
-                <a href="https://t.me/Tayejoshua4" target="_blank"
-                  ><img src="Images/Icons/Telegram.png" alt="telegram"
-                /></a>
-                <a href="https://www.instagram.com/joshua_taye/" target="_blank"
-                  ><img
-                    src="Images/Icons/instagram.png"
-                    alt="instagram"
-                    class="footer-icons"
-                /></a>
-                <a href="https://twitter.com/Joshua_taye4" target="_blank"
-                  ><img src="Images/Icons/x.png" alt="x" class="footer-icons"
-                /></a>
-                <a
-                  href="https://www.linkedin.com/in/joshua-alemayehu-71a454227/"
-                  target="_blank"
-                  ><img
-                    src="Images/Icons/linkedin.png"
-                    alt="linkedin"
-                    class="footer-icons"
-                /></a>
-              </div>
-            </div>
+      <div class="chatbox">
+        <div class="chatbox__container">
+          <div class="chatbox__child" id="chatbox__child"></div>
+          <div class="chatbox__user-input">
+            <button
+              class="btn chatbox__contact-btn"
+              onclick="sendMessage('Talk to me')"
+            >
+              Talk to me
+            </button>
+            <button
+              class="btn chatbox__contact-btn"
+              onclick="sendMessage('Get my CV')"
+            >
+              Get my CV
+            </button>
+            <button class="btn chatbox__contact-btn" onclick="showContact()">
+              Contact me
+            </button>
           </div>
         </div>
-      </section>
+
+        <div class="contact-info" id="contact-info" style="display: none">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>
+              <button class="btn" onclick="openLink('mailto:tayejoshua4@.com')">
+                Email: tayejoshua4@gmail.com
+              </button>
+            </li>
+            <li>
+              <button class="btn" onclick="openLink('tel:+251-943-015-328')">
+                Phone: +251-943-015-328
+              </button>
+            </li>
+            <li>
+              Social Media:
+              <ul>
+                <li>
+                  <button
+                    class="btn"
+                    onclick="openLink('https://twitter.com/Joshua_taye4')"
+                  >
+                    Twitter
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="btn"
+                    onclick="openLink('https://t.me/Tayejoshua4')"
+                  >
+                    Telegram
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__row">
+          <div class="col-lg-4">
+            <h3 class="footer__title">Contacts</h3>
+            <div class="footer__div--icons">
+              <a href="https://t.me/Tayejoshua4" target="_blank"
+                ><img
+                  src="../Images/Icons/Telegram.png"
+                  alt="telegram"
+                  class="footer__icon"
+              /></a>
+              <a href="https://www.instagram.com/joshua_taye/" target="_blank"
+                ><img
+                  src="../Images/Icons/instagram.png"
+                  alt="instagram"
+                  class="footer__icon"
+              /></a>
+              <a href="https://twitter.com/Joshua_taye4" target="_blank"
+                ><img src="../Images/Icons/x.png" alt="x" class="footer__icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/joshua-alemayehu-71a454227/"
+                target="_blank"
+                ><img
+                  src="../Images/Icons/linkedin.png"
+                  alt="linkedin"
+                  class="footer__icon"
+              /></a>
+            </div>
+            <div class="footer__div--phone">
+              <img
+                src="../Images/Icons/Phone.png"
+                alt="phone"
+                class="footer__icon"
+              />
+              <p class="phone__p">+251 943 015 328</p>
+            </div>
+            <div class="footer__div--email">
+              <img
+                src="../Images/Icons/email.png"
+                alt="email"
+                class="footer__icon"
+              />
+              <a href="mailto:tayejoshua4@gmail.com" target="_blank"
+                >tayejoshua4@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer__title">Address</h3>
+            <address>
+              <em></em>Subcity: Lemi Kura<br />Wereda: 08, <br />
+              Kebele: 14/15,<br />
+              Addis Ababa, Ethiopia<br />Postal Address: 30664
+            </address>
+          </div>
+          <div class="col-lg-4 footer__div--chat">
+            <h3 class="footer__title">Wanna Chat?</h3>
+            <a href="contacts.html" class="btn">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
